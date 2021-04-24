@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Calculadora - Creado por: Jhusef Alfonso López Parra</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
+
+		<script type="text/javascript" stc='/js/funciones.js'>
+			
+			
+
+		</script>
+
+
+	</head>
+	<body>
+		
+		<form class="calculadora" name="calc">
+			
+			
+			<input class="resultado" type="text" name="res" readonly="">
+
+			<input class="value" type="text" name="txt" readonly="">
+
+			<div></div>
+			<div></div>
+
+			<input type="button" class="btn btn-secondary" onclick="porcentaje(document.calc.txt.value);" value="%">
+			<input type="button" class="btn btn-secondary" onclick="limpiar();" value="CE">
+			
+			<input type="button" class="btn btn-light" onclick="concatenar(7);" value="7">
+			<input type="button" class="btn btn-light" onclick="concatenar(8);" value="8">
+			<input type="button" class="btn btn-light" onclick="concatenar(9);" value="9">
+			<input type="button" class="btn btn-secondary" onclick="concatenar('/');" value="÷">
+
+			<input type="button" class="btn btn-light" onclick="concatenar(4);" value="4">
+			<input type="button" class="btn btn-light" onclick="concatenar(5);" value="5">
+			<input type="button" class="btn btn-light" onclick="concatenar(6);" value="6">
+			<input type="button" class="btn btn-secondary" onclick="concatenar('*');" value="x">
+
+			<input type="button" class="btn btn-light" onclick="concatenar(1);" value="1">
+			<input type="button" class="btn btn-light" onclick="concatenar(2);" value="2">
+			<input type="button" class="btn btn-light" onclick="concatenar(3);" value="3">
+			<input type="button" class="btn btn-secondary" onclick="concatenar('-');" value="-">
+
+			<input type="button" class="btn btn-light" onclick="concatenar(0);" value="0">
+			<input type="button" class="btn btn-light" onclick="agregarPunto(document.calc.txt.value)" value=".">
+			<input type="button" class="btn btn-primary" onclick="mostrarResultado(document.calc.txt.value);" value="=">
+			<input type="button" class="btn btn-secondary" onclick="concatenar('+');" value="+">
+
+			<div id="header"></div>
+
+		</form>
+
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.6.0.min"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/funciones.js"></script>
+	</body>
+</html>
